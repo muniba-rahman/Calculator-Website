@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Scientific</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h2>Calculator</h2>
+        <ul>
+            <li><a href="/">Simple</a></li>
+            <li><a href="/scientific.html">Scientific</a></li>
+        </ul>
+    </nav>
+
+    <h2 class="heading">Scientific Calculator</h2>
+
+
+    <div class="keypad">
+        <div class="row">
+            <input type="text" id="input" value="">
+        </div>
+        <div class="row">
+            <button class="btn">C</button>
+            <button onclick=log()>log</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="%">%</button>
+            <button class="btn">DEL</button>
+        </div>
+        <div class="row">
+            <button onclick=sin()>sin</button>
+            <button onclick=pi()>&#960</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">/</button>
+        </div>
+        <div class="row">
+            <button onclick=cos()>cos</button>
+            <button onclick=cuberoot()>&#8731</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">*</button>
+        </div>
+        <div class="row">
+            <button onclick=tan()>tan</button>
+            <button onclick=sqroot()>&#8730</button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+        </div>
+        <div class="row">
+            <button onclick=cube()>x<sup>3</sup></button>
+            <button onclick=square()>x<sup>2</sup></button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn">=</button>
+            <button class="btn">+</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
